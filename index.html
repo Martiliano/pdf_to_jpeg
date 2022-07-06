@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <meta property="og:locale" content="pt_BR">
+    <title>Convert pdf to jpeg</title>
+
+    <meta name="description" content="Convert pdf to jpeg." />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/pdfjs/build/pdf.js" defer></script>
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container_all">
+
+            <div class="line_10px"></div>
+
+            <div class="line_10px"></div>
+
+            <div class="container_itens">
+                <input type="text" id="folder" placeholder="Folder Name" />
+            </div>
+
+            <div class="container_itens">
+                <input id='pdf' type='file' />
+            </div>
+
+            <div class="container_itens">
+                <input type="text" id="total_pages" placeholder="Total number of pages" value="0" readonly />
+            </div>
+
+            <div class="container_itens">
+                <input type="button" id="process" value="Process" disabled />
+            </div>
+
+            <div class="container_itens">
+                <input type="text" id="current_page" placeholder="Current page" value="0" readonly />
+            </div>
+
+            <div class="container_itens">
+                <h1 id="message" class="display-none"></h1>
+            </div>
+
+            <div class="container_itens">
+                <canvas id="the-canvas" style="border: 1px solid black; direction: ltr;"></canvas>
+            </div>
+
+        </div>
+    </div>
+</body>
